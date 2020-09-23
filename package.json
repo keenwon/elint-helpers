@@ -1,0 +1,36 @@
+{
+  "name": "elint-helpers",
+  "version": "0.0.1",
+  "description": "elint preset helpers",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test:lint",
+    "test:lint": "eslint --format codeframe \"**/*.js\" --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keenwon/elint-helpers.git"
+  },
+  "keywords": [
+    "elint"
+  ],
+  "author": {
+    "name": "keenwon",
+    "email": "semanwmj@gmail.com",
+    "url": "http://keenwon.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/keenwon/elint-helpers/issues"
+  },
+  "homepage": "https://github.com/keenwon/elint-helpers#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^11.0.0",
+    "husky": "^2.7.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1"
+  }
+}
