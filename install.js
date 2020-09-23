@@ -6,7 +6,7 @@ const fs = require('fs-extra')
 const { linterConfigFile } = require('./config')
 
 function install () {
-  const cwd = process.env.INIT_CWD || process.cwd()
+  const cwd = process.cwd()
   const root = cwd.split('/node_modules/')[0]
 
   debug(`cwd: ${cwd}`)
