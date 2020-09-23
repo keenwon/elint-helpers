@@ -1,8 +1,10 @@
 {
   "name": "elint-helpers",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "elint preset helpers",
-  "main": "index.js",
+  "bin": {
+    "elint-helpers": "./bin/cli.js"
+  },
   "scripts": {
     "test": "npm run test:lint",
     "test:lint": "eslint --format codeframe \"**/*.js\" --fix"
@@ -35,6 +37,7 @@
     "husky": "^2.7.0"
   },
   "dependencies": {
+    "commander": "^6.1.0",
     "debug": "^4.2.0",
     "fs-extra": "^6.0.1"
   }
