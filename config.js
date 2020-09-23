@@ -18,8 +18,8 @@ const linterConfigFile = [
 
   // prettier
   '.prettierrc.js'
-];
+]
 
 module.exports = {
   linterConfigFile
-};
+}
