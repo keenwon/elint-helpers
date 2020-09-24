@@ -9,7 +9,7 @@
 const debug = require('debug')('elint-helpers:cli')
 const program = require('commander')
 const { description } = require('../package.json')
-const install = require('../install')
+const install = require('../src/install')
 
 debug('process.argv: %o', process.argv)
 

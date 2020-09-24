@@ -16,6 +16,10 @@
   "keywords": [
     "elint"
   ],
+  "files": [
+    "bin",
+    "src"
+  ],
   "author": {
     "name": "keenwon",
     "email": "semanwmj@gmail.com",
