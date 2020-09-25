@@ -7,7 +7,11 @@ const { linterConfigFile } = require('./config')
 
 function install () {
   const cwd = process.cwd()
-  const root = cwd.split(`${path.sep}node_modules${path.sep}`)[0]
+  let root = cwd.split(`${path.sep}node_modules${path.sep}`)[0]
+
+  if (process.versions.pnp) {
+    root = cwd.split(`${path.sep}.yarn${path.sep}`)[0]
+  }
 
   debug(`cwd: ${cwd}`)
   debug(`root: ${root}`)
