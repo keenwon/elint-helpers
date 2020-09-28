@@ -24,7 +24,7 @@ function install () {
       return
     }
 
-    fs.moveSync(from, to, { overwrite: true })
+    fs.copySync(from, to, { overwrite: true })
 
     console.log(`  move: from "${from}"`)
     console.log(`          to "${to}"`)
