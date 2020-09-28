@@ -1,6 +1,6 @@
 {
   "name": "elint-helpers",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "elint preset helpers",
   "bin": {
     "elint-helpers": "./bin/cli.js"
