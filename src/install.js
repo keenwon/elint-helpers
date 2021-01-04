@@ -20,7 +20,7 @@ function install () {
     const from = path.join(cwd, fileName)
     const to = path.join(root, fileName)
 
-    if (!fs.pathExistsSync(from)) {
+    if (!fs.pathExistsSync(from) || from === to) {
       return
     }
 
