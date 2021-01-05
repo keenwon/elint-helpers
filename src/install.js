@@ -16,6 +16,14 @@ function install () {
   debug(`cwd: ${cwd}`)
   debug(`root: ${root}`)
 
+  const rootName = path.basename(root)
+
+  // 在 preset 开发时跳过安装过程
+  if (/^elint-preset-.*/.test(rootName)) {
+    console.log(`  find elint preset directory: ${rootName}, skip preset installation`)
+    return
+  }
+
   linterConfigFile.forEach(fileName => {
     const from = path.join(cwd, fileName)
     const to = path.join(root, fileName)
