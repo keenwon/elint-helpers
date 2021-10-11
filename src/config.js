@@ -37,6 +37,12 @@ const linterConfigFile = [
 
   // prettier
   '.prettierrc.js',
+  '.prettierrc.cjs',
+  '.prettierrc.yaml',
+  '.prettierrc.yml',
+  '.prettierrc.json',
+  'prettierrc.config.js',
+  'prettierrc.config.cjs',
   '.prettierignore'
 ]
 
