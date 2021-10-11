@@ -27,14 +27,13 @@ const linterConfigFile = [
   '.huskyrc.json',
 
   // commitlint
-  '.commitlintrc',
-  '.commitlintrc.json',
+  '.commitlintrc.js',
+  '.commitlintrc.cjs',
   '.commitlintrc.yaml',
   '.commitlintrc.yml',
-  '.commitlintrc.ts',
-  '.commitlintrc.js',
-  '.commitlintrc.config.ts',
-  '.commitlintrc.config.js',
+  '.commitlintrc.json',
+  'commitlintrc.config.js',
+  'commitlintrc.config.cjs',
 
   // prettier
   '.prettierrc.js',
